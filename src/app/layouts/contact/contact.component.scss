@@ -41,28 +41,28 @@
       }
 
       &-info {
-        letter-spacing: 0.5px;
+        letter-spacing: 0.2px;
         font-size: 14px;
         line-height: 1.5;
         .info {
           margin-bottom: 20px;
           display: flex;
-          .fa{
-            margin-right: 10px;
-            font-size: 18px !important
+          .icon{
+            min-width: 30px;
+            .fa {
+              font-size: 20px !important
+            }
           }
-
-          a {
-            text-decoration: none;
-            color: #F2F2F2;
-            display: block;
-            margin-right: 7px;
+          .icon-detail {
+            a {
+              text-decoration: none;
+              color: #F2F2F2;
+              margin-right: 7px;
+            }
           }
         }
       }
     }
-
-
 
     .contact-form {
       background-color: #F8F9F6;
@@ -125,5 +125,39 @@
       }
     }
   }
+}
 
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 319px) and (max-width: 899px) {
+  #contact-page {
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      .contact-form {
+        width: 100%;
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+      }
+
+      .contact-detail {
+        background-color: #03A678;
+        width: 100%;
+        min-width: 200px;
+        height: 500px;
+        padding: 20% 5%;
+
+        &-info {
+          .info {
+            margin-bottom: 30px;
+            .icon{
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
