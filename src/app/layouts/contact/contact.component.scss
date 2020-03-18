@@ -105,6 +105,10 @@
             background-color: #F8F9F6;
             outline-style: none;
           }
+
+          textarea::placeholder {
+            font-size: 16px;
+          }
         }
 
         &-button {
