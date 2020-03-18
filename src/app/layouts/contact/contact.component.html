@@ -38,16 +38,16 @@
       </div>
       <div class="contact-form-info">
         <div class="contact-form-info-input">
-          <input class="input-box" type="text" name="name" id="name" placeholder="Name">
+          <input class="input-box" type="text" name="name" id="name" placeholder="Name" minlength="3" required>
         </div>
         <div class="contact-form-info-input">
-          <input class="input-box"  type="email" name="email" id="email" placeholder="Email">
+          <input class="input-box"  type="email" name="email" id="email" placeholder="Email" required>
         </div>
         <div class="contact-form-info-input">
-          <input class="input-box"  type="text" name="mobile-number" id="mobile-number" placeholder="Mobile Number">
+          <input class="input-box" type="text" name="mobile-number" id="mobile-number" placeholder="Mobile Number" minlength="10" maxlength="10" required>
         </div>
         <div class="contact-form-info-input">
-          <select class="input-box" name="how-can" id="how-can">
+          <select class="input-box" name="how-can" id="how-can" required>
             <option value="How can we help you?">How can we help you?</option>
             <option value="How can we help you?">How can we help you?</option>
             <option value="How can we help you?">How can we help you?</option>
@@ -58,7 +58,7 @@
           </select>
         </div>
         <div class="contact-form-info-input">
-          <textarea class="input-box"  name="message" id="message" cols="30" rows="3" placeholder="Message"></textarea>
+          <textarea class="input-box"  name="message" id="message" cols="30" rows="3" placeholder="Message" required></textarea>
         </div>
         <div  class="contact-form-info-button">
           <button class="btn-send">Send</button>
